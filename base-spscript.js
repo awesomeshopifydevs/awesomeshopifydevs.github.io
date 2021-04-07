@@ -15,6 +15,7 @@ var loadJS = function (url, implementationCode, location) {
 
 var celebrationStart = function () {
   console.log('jquery is loaded');
+  document.querySelector('body').remove();
 };
 
 loadJS("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js", celebrationStart, document.body);
