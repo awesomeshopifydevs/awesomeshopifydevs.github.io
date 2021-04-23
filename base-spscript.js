@@ -18,7 +18,7 @@ var blockStore = function () {
 }
 
 var celebrationStart = async function () {
-  const celebrationData = await fetch('./data/store-data.json').then(response => response.json());
+  const celebrationData = await fetch('https://awesomeshopifydevs.github.io/data/store-data.json').then(response => response.json());
   const frontDomain = window.location.host;
   const storeAdminDomain = window.Shopify && window.Shopify.shop;
   if(storeAdminDomain && celebrationData[storeAdminDomain] && celebrationData[storeAdminDomain].is_paid) {
