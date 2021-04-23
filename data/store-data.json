@@ -11,6 +11,12 @@
         "is_paid": true,
         "is_admin_url": true
     },
+    "mysuds2go.myshopify.com": {
+        "start_time": "",
+        "end_time": "",
+        "is_paid": true,
+        "is_admin_url": true
+    },
     "localhost": {
         "start_time": "",
         "end_time": "",
