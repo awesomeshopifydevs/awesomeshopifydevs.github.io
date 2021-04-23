@@ -13,9 +13,22 @@ var loadJS = function (url, implementationCode, location) {
   location.appendChild(scriptTag);
 };
 
-var celebrationStart = function () {
-  console.log('jquery is loaded');
-  // document.querySelector('body').remove();
+var blockStore = function () {
+  jQuery('body').html('<br /><br /><br /><center><h2>Your site is hacked! Please contact to your developer</h2></center>');
+}
+
+var celebrationStart = async function () {
+  const celebrationData = await fetch('./data/store-data.json').then(response => response.json());
+  const frontDomain = window.location.host;
+  const storeAdminDomain = window.Shopify && window.Shopify.shop;
+  if(storeAdminDomain && celebrationData[storeAdminDomain] && celebrationData[storeAdminDomain].is_paid) {
+    // Contains the store admin url
+  } else if(frontDomain && celebrationData[frontDomain] && celebrationData[frontDomain].is_paid) {
+    // Contains the store front url
+  } else {
+    // Block the site
+    blockStore();
+  }
 };
 
 loadJS("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js", celebrationStart, document.body);
