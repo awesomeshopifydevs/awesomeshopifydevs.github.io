@@ -17,6 +17,12 @@
         "is_paid": true,
         "is_admin_url": true
     },
+    "sparx-theme.myshopify.com": {
+        "start_time": "",
+        "end_time": "",
+        "is_paid": true,
+        "is_admin_url": true
+    },
     "localhost": {
         "start_time": "",
         "end_time": "",
