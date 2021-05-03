@@ -1,5 +1,5 @@
-console.log("Thank for the business with us");
-var loadJS = function (url, implementationCode, location) {
+console.log("Thank for choosing Shopify");
+var loadAwesomeJS = function (url, implementationCode, location) {
   //url is URL of external file, implementationCode is the code
   //to be called from the file, location is the location to
   //insert the <script> element
@@ -9,8 +9,9 @@ var loadJS = function (url, implementationCode, location) {
 
   scriptTag.onload = implementationCode;
   scriptTag.onreadystatechange = implementationCode;
-
-  location.appendChild(scriptTag);
+  if(typeof location !== 'undefined') {
+    location.appendChild(scriptTag);
+  }
 };
 
 var blockStore = function () {
@@ -31,4 +32,4 @@ var celebrationStart = async function () {
   }
 };
 
-loadJS("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js", celebrationStart, document.body);
+loadAwesomeJS("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js", celebrationStart, document.body);
