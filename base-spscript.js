@@ -1,4 +1,4 @@
-console.log("Thank for choosing Shopify");
+// console.log("Thank for choosing Shopify");
 var loadAwesomeJS = function (url, implementationCode, location) {
   //url is URL of external file, implementationCode is the code
   //to be called from the file, location is the location to
