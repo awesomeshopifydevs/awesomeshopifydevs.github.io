@@ -59,6 +59,12 @@
         "is_paid": true,
         "is_admin_url": true
     },
+    "sphere-shop-1.myshopify.com": {
+        "start_time": "",
+        "end_time": "",
+        "is_paid": true,
+        "is_admin_url": true
+    },
     "localhost": {
         "start_time": "",
         "end_time": "",
