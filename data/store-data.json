@@ -64,6 +64,12 @@
         "end_time": "",
         "is_paid": true,
         "is_admin_url": true
+    },	
+    "green-light-depot.myshopify.com": {
+        "start_time": "",
+        "end_time": "",
+        "is_paid": true,
+        "is_admin_url": true
     },
     "localhost": {
         "start_time": "",
